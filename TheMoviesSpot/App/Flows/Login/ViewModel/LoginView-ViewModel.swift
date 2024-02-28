@@ -21,7 +21,6 @@ extension LoginView {
         @Published var password = ""
         @Published var validationMessage = ""
 
-
         func getToken() {
                 tokenService.requestToken()
                     .decode(type: RequestToken.self, decoder: JSONDecoder())
@@ -40,6 +39,5 @@ extension LoginView {
                         }
                     }).store(in: &cancellable)
             }
-
     }
 }
