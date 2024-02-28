@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7158F66D2B8F6E4200105328 /* APIprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66C2B8F6E4200105328 /* APIprovider.swift */; };
+		7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66E2B8F6E9600105328 /* APIerrors.swift */; };
+		7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6712B8F6ED900105328 /* EndpointProtocol.swift */; };
+		7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */; };
+		7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */; };
+		7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6782B8F6F5F00105328 /* RequestTokenService.swift */; };
 		71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */; };
 		71EA908D2B8F6744008FAEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908C2B8F6744008FAEBA /* Assets.xcassets */; };
 		71EA90902B8F6744008FAEBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908F2B8F6744008FAEBA /* Preview Assets.xcassets */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7158F66C2B8F6E4200105328 /* APIprovider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIprovider.swift; sourceTree = "<group>"; };
+		7158F66E2B8F6E9600105328 /* APIerrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIerrors.swift; sourceTree = "<group>"; };
+		7158F6712B8F6ED900105328 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenEndpoint.swift; sourceTree = "<group>"; };
+		7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionEndpoint.swift; sourceTree = "<group>"; };
+		7158F6782B8F6F5F00105328 /* RequestTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenService.swift; sourceTree = "<group>"; };
 		71EA90832B8F6743008FAEBA /* TheMoviesSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMoviesSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMoviesSpotApp.swift; sourceTree = "<group>"; };
 		71EA908C2B8F6744008FAEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7158F6702B8F6E9D00105328 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				7158F6712B8F6ED900105328 /* EndpointProtocol.swift */,
+				7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */,
+				7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7158F6772B8F6F4B00105328 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7158F6782B8F6F5F00105328 /* RequestTokenService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		71EA907A2B8F6743008FAEBA = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +191,10 @@
 		71EA90B72B8F6838008FAEBA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7158F6772B8F6F4B00105328 /* Services */,
+				7158F6702B8F6E9D00105328 /* Endpoints */,
+				7158F66C2B8F6E4200105328 /* APIprovider.swift */,
+				7158F66E2B8F6E9600105328 /* APIerrors.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -344,10 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */,
 				71EA90CD2B8F6B4F008FAEBA /* Item.swift in Sources */,
+				7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */,
+				7158F66D2B8F6E4200105328 /* APIprovider.swift in Sources */,
+				7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */,
+				7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */,
 				71EA90CA2B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift in Sources */,
 				71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */,
 				71EA90BF2B8F696E008FAEBA /* LoginView-ViewModel.swift in Sources */,
+				7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */,
 				71EA90C82B8F6A14008FAEBA /* LoginView.swift in Sources */,
 				71EA90CC2B8F6AD5008FAEBA /* DependencyInjector.swift in Sources */,
 				71EA90BD2B8F68C1008FAEBA /* TheRequestToken.swift in Sources */,

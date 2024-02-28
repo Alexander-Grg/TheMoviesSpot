@@ -22,9 +22,9 @@ struct LoginView: View {
                     Text("Find your favourite movies!")
                         .font(.subheadline)
                         .fontWeight(.bold)
-                    if viewModel.isStarted && viewModel.isValid == false {
+                    if viewModel.isStarted && viewModel.isTokenReceived == false {
                         Button("Sign in") {
-//                           MARK: GET TOKEN METHOD
+                            viewModel.getToken()
                         }
                         .buttonStyle(.borderedProminent)
 
@@ -36,12 +36,12 @@ struct LoginView: View {
 
                         }
                         .buttonStyle(.borderless)
-                    } else if viewModel.isStarted && viewModel.isValid {
+                    } else if viewModel.isStarted && viewModel.isTokenReceived {
                         Text("Enter your login & password to proceed")
                             .font(.system(size: 14, weight: .medium, design: .monospaced))
-                        TextField("Login", text: $viewModel.loginText)
+                        TextField("Login", text: $validationViewModel.login)
                             .multilineTextAlignment(.center)
-                        SecureField("Password", text: $viewModel.password)
+                        SecureField("Password", text: $validationViewModel.password)
                             .multilineTextAlignment(.center)
                     }
                     else {

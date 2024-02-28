@@ -1,2 +1,6 @@
 # TheMoviesSpot
-The app for reviewing, ranking, and making a list of favourite movies. Based on TMDB free API.
+
+The app is in development, the APIprovider has been hidden to prevent an exposing of the APIkey.
+
+SwiftUI, MVVM, Combine, SwiftData, KeychainAccess.
+Based on the free TMDb API. 
