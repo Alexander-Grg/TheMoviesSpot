@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7158F66D2B8F6E4200105328 /* APIprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66C2B8F6E4200105328 /* APIprovider.swift */; };
 		7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66E2B8F6E9600105328 /* APIerrors.swift */; };
 		7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6712B8F6ED900105328 /* EndpointProtocol.swift */; };
 		7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */; };
 		7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */; };
 		7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6782B8F6F5F00105328 /* RequestTokenService.swift */; };
 		71A6BE612B922190002C5C9F /* CreateSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6BE602B922190002C5C9F /* CreateSessionService.swift */; };
+		717F23B02B8F757700C22CEF /* APIprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66C2B8F6E4200105328 /* APIprovider.swift */; };
 		71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */; };
 		71EA908D2B8F6744008FAEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908C2B8F6744008FAEBA /* Assets.xcassets */; };
 		71EA90902B8F6744008FAEBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908F2B8F6744008FAEBA /* Preview Assets.xcassets */; };
@@ -389,11 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717F23B02B8F757700C22CEF /* APIprovider.swift in Sources */,
 				7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */,
 				71F895D02B95F85E004456A1 /* LoginWebView.swift in Sources */,
 				71EA90CD2B8F6B4F008FAEBA /* Item.swift in Sources */,
 				7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */,
-				7158F66D2B8F6E4200105328 /* APIprovider.swift in Sources */,
 				7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */,
 				7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */,
 				71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */,
