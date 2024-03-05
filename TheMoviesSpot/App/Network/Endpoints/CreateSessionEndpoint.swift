@@ -14,7 +14,7 @@ enum CreateSessionEndpoint: EndpointProtocol {
                        token: String)
 
     var absoluteURL: String {
-        return baseURL + "3/authentication/token/validate_with_login?"
+        return baseURL + "3/authentication/token/validate_with_login"
     }
 
     var parameters: [String : String] {

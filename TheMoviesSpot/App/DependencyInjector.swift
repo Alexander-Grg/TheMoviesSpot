@@ -52,4 +52,9 @@ extension InjectedValues {
            get { Self[RequestTokenServiceKey.self] }
            set { Self[RequestTokenServiceKey.self] = newValue }
        }
+
+    var sessionService: CreateSessionProtocol {
+           get { Self[CreateSessionServiceKey.self] }
+           set { Self[CreateSessionServiceKey.self] = newValue }
+       }
 }
