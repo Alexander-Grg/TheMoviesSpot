@@ -10,7 +10,6 @@ import Combine
 
 struct LoginView: View {
     @ObservedObject var viewModel = ViewModel()
-    @ObservedObject var validationViewModel = LoginValidationForm()
 
     var body: some View {
         NavigationStack() {
@@ -36,15 +35,7 @@ struct LoginView: View {
 
                         }
                         .buttonStyle(.borderless)
-                    } else if viewModel.isStarted && viewModel.isTokenReceived {
-                        Text("Enter your login & password to proceed")
-                            .font(.system(size: 14, weight: .medium, design: .monospaced))
-                        TextField("Login", text: $validationViewModel.login)
-                            .multilineTextAlignment(.center)
-                        SecureField("Password", text: $validationViewModel.password)
-                            .multilineTextAlignment(.center)
-                    }
-                    else {
+                    } else {
                         Button("Get started!", systemImage: "popcorn") {
                             viewModel.isStarted.toggle()
                         }
@@ -53,6 +44,8 @@ struct LoginView: View {
                 }
                 Spacer()
             }
+        }.navigationDestination(isPresented: $viewModel.goLoginWebView) {
+            LoginWebView()
         }
     }
 }

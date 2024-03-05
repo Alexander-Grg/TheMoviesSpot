@@ -17,6 +17,7 @@ extension LoginView {
         @Published var isStarted = false
         @Published var isSignInStarted = false
         @Published var isTokenReceived = false
+        @Published var goLoginWebView = false
         @Published var loginText = ""
         @Published var password = ""
         @Published var validationMessage = ""
@@ -34,6 +35,7 @@ extension LoginView {
                         do {
                             try keychain.set(value.token, key: "requestToken")
                             self.isTokenReceived = true
+                            self.goLoginWebView = true
                         } catch {
                             print("Saving to the keychain is failed")
                         }

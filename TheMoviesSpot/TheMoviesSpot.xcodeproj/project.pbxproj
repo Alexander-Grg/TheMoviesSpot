@@ -13,6 +13,7 @@
 		7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */; };
 		7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */; };
 		7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6782B8F6F5F00105328 /* RequestTokenService.swift */; };
+		71A6BE612B922190002C5C9F /* CreateSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6BE602B922190002C5C9F /* CreateSessionService.swift */; };
 		71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */; };
 		71EA908D2B8F6744008FAEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908C2B8F6744008FAEBA /* Assets.xcassets */; };
 		71EA90902B8F6744008FAEBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908F2B8F6744008FAEBA /* Preview Assets.xcassets */; };
@@ -23,9 +24,9 @@
 		71EA90BF2B8F696E008FAEBA /* LoginView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90BE2B8F696E008FAEBA /* LoginView-ViewModel.swift */; };
 		71EA90C62B8F6A0A008FAEBA /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 71EA90C52B8F6A0A008FAEBA /* KeychainAccess */; };
 		71EA90C82B8F6A14008FAEBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90C72B8F6A14008FAEBA /* LoginView.swift */; };
-		71EA90CA2B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90C92B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift */; };
 		71EA90CC2B8F6AD5008FAEBA /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90CB2B8F6AD5008FAEBA /* DependencyInjector.swift */; };
 		71EA90CD2B8F6B4F008FAEBA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90B92B8F6855008FAEBA /* Item.swift */; };
+		71F895D02B95F85E004456A1 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F895CF2B95F85E004456A1 /* LoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenEndpoint.swift; sourceTree = "<group>"; };
 		7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionEndpoint.swift; sourceTree = "<group>"; };
 		7158F6782B8F6F5F00105328 /* RequestTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenService.swift; sourceTree = "<group>"; };
+		71A6BE602B922190002C5C9F /* CreateSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionService.swift; sourceTree = "<group>"; };
 		71EA90832B8F6743008FAEBA /* TheMoviesSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMoviesSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMoviesSpotApp.swift; sourceTree = "<group>"; };
 		71EA908C2B8F6744008FAEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,8 +67,8 @@
 		71EA90BC2B8F68C1008FAEBA /* TheRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheRequestToken.swift; sourceTree = "<group>"; };
 		71EA90BE2B8F696E008FAEBA /* LoginView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView-ViewModel.swift"; sourceTree = "<group>"; };
 		71EA90C72B8F6A14008FAEBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		71EA90C92B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView-ValidationVIewModel.swift"; sourceTree = "<group>"; };
 		71EA90CB2B8F6AD5008FAEBA /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		71F895CF2B95F85E004456A1 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7158F6782B8F6F5F00105328 /* RequestTokenService.swift */,
+				71A6BE602B922190002C5C9F /* CreateSessionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 		71EA90BB2B8F688E008FAEBA /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				71F895CE2B95F84B004456A1 /* LoginWebView */,
 				71EA90C12B8F698D008FAEBA /* View */,
 				71EA90C02B8F6987008FAEBA /* ViewModel */,
 			);
@@ -229,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				71EA90BE2B8F696E008FAEBA /* LoginView-ViewModel.swift */,
-				71EA90C92B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -240,6 +243,14 @@
 				71EA90C72B8F6A14008FAEBA /* LoginView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		71F895CE2B95F84B004456A1 /* LoginWebView */ = {
+			isa = PBXGroup;
+			children = (
+				71F895CF2B95F85E004456A1 /* LoginWebView.swift */,
+			);
+			path = LoginWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,13 +390,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */,
+				71F895D02B95F85E004456A1 /* LoginWebView.swift in Sources */,
 				71EA90CD2B8F6B4F008FAEBA /* Item.swift in Sources */,
 				7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */,
 				7158F66D2B8F6E4200105328 /* APIprovider.swift in Sources */,
 				7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */,
 				7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */,
-				71EA90CA2B8F6A55008FAEBA /* LoginView-ValidationVIewModel.swift in Sources */,
 				71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */,
+				71A6BE612B922190002C5C9F /* CreateSessionService.swift in Sources */,
 				71EA90BF2B8F696E008FAEBA /* LoginView-ViewModel.swift in Sources */,
 				7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */,
 				71EA90C82B8F6A14008FAEBA /* LoginView.swift in Sources */,

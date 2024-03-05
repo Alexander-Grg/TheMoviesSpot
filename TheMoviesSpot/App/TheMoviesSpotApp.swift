@@ -25,7 +25,9 @@ struct TheMoviesSpotApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack {
+                LoginView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
