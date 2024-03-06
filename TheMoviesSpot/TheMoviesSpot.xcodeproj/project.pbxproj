@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66E2B8F6E9600105328 /* APIerrors.swift */; };
 		7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6712B8F6ED900105328 /* EndpointProtocol.swift */; };
-		7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */; };
-		7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */; };
-		7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6782B8F6F5F00105328 /* RequestTokenService.swift */; };
-		71A6BE612B922190002C5C9F /* CreateSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6BE602B922190002C5C9F /* CreateSessionService.swift */; };
+		7158F6792B8F6F5F00105328 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F6782B8F6F5F00105328 /* SessionService.swift */; };
 		717F23B02B8F757700C22CEF /* APIprovider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158F66C2B8F6E4200105328 /* APIprovider.swift */; };
+		717F8AB42B9775B7004D4C21 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F8AB32B9775B7004D4C21 /* MainTabbedView.swift */; };
+		71E2F0FD2B98882B0087B1C2 /* MoviesSearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F0FC2B98882B0087B1C2 /* MoviesSearchMainView.swift */; };
+		71E2F0FF2B98B4460087B1C2 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F0FE2B98B4460087B1C2 /* Session.swift */; };
+		71E2F1012B98B6CC0087B1C2 /* SessionEnpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2F1002B98B6CC0087B1C2 /* SessionEnpoint.swift */; };
 		71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */; };
 		71EA908D2B8F6744008FAEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908C2B8F6744008FAEBA /* Assets.xcassets */; };
 		71EA90902B8F6744008FAEBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA908F2B8F6744008FAEBA /* Preview Assets.xcassets */; };
@@ -50,10 +51,11 @@
 		7158F66C2B8F6E4200105328 /* APIprovider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIprovider.swift; sourceTree = "<group>"; };
 		7158F66E2B8F6E9600105328 /* APIerrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIerrors.swift; sourceTree = "<group>"; };
 		7158F6712B8F6ED900105328 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
-		7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenEndpoint.swift; sourceTree = "<group>"; };
-		7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionEndpoint.swift; sourceTree = "<group>"; };
-		7158F6782B8F6F5F00105328 /* RequestTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenService.swift; sourceTree = "<group>"; };
-		71A6BE602B922190002C5C9F /* CreateSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionService.swift; sourceTree = "<group>"; };
+		7158F6782B8F6F5F00105328 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		717F8AB32B9775B7004D4C21 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		71E2F0FC2B98882B0087B1C2 /* MoviesSearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchMainView.swift; sourceTree = "<group>"; };
+		71E2F0FE2B98B4460087B1C2 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		71E2F1002B98B6CC0087B1C2 /* SessionEnpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionEnpoint.swift; sourceTree = "<group>"; };
 		71EA90832B8F6743008FAEBA /* TheMoviesSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMoviesSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EA90862B8F6743008FAEBA /* TheMoviesSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMoviesSpotApp.swift; sourceTree = "<group>"; };
 		71EA908C2B8F6744008FAEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7158F6712B8F6ED900105328 /* EndpointProtocol.swift */,
-				7158F6732B8F6EF700105328 /* RequestTokenEndpoint.swift */,
-				7158F6752B8F6F1F00105328 /* CreateSessionEndpoint.swift */,
+				71E2F1002B98B6CC0087B1C2 /* SessionEnpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -110,10 +111,57 @@
 		7158F6772B8F6F4B00105328 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7158F6782B8F6F5F00105328 /* RequestTokenService.swift */,
-				71A6BE602B922190002C5C9F /* CreateSessionService.swift */,
+				7158F6782B8F6F5F00105328 /* SessionService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		717F8AAE2B97751F004D4C21 /* MainTabbedView */ = {
+			isa = PBXGroup;
+			children = (
+				717F8AB02B97752E004D4C21 /* ViewModel */,
+				717F8AAF2B97752A004D4C21 /* View */,
+			);
+			path = MainTabbedView;
+			sourceTree = "<group>";
+		};
+		717F8AAF2B97752A004D4C21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				717F8AB32B9775B7004D4C21 /* MainTabbedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		717F8AB02B97752E004D4C21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71E2F0F82B9887F90087B1C2 /* MoviesSearchMain */ = {
+			isa = PBXGroup;
+			children = (
+				71E2F0FA2B9888110087B1C2 /* ViewModel */,
+				71E2F0F92B98880C0087B1C2 /* View */,
+			);
+			path = MoviesSearchMain;
+			sourceTree = "<group>";
+		};
+		71E2F0F92B98880C0087B1C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71E2F0FC2B98882B0087B1C2 /* MoviesSearchMainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71E2F0FA2B9888110087B1C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		71EA907A2B8F6743008FAEBA = {
@@ -186,6 +234,8 @@
 		71EA90B62B8F6833008FAEBA /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				71E2F0F82B9887F90087B1C2 /* MoviesSearchMain */,
+				717F8AAE2B97751F004D4C21 /* MainTabbedView */,
 				71EA90BB2B8F688E008FAEBA /* Login */,
 			);
 			path = Flows;
@@ -206,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				71EA90BC2B8F68C1008FAEBA /* TheRequestToken.swift */,
+				71E2F0FE2B98B4460087B1C2 /* Session.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,7 +273,6 @@
 		71EA90BB2B8F688E008FAEBA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				71F895CE2B95F84B004456A1 /* LoginWebView */,
 				71EA90C12B8F698D008FAEBA /* View */,
 				71EA90C02B8F6987008FAEBA /* ViewModel */,
 			);
@@ -240,17 +290,10 @@
 		71EA90C12B8F698D008FAEBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				71F895CF2B95F85E004456A1 /* LoginWebView.swift */,
 				71EA90C72B8F6A14008FAEBA /* LoginView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		71F895CE2B95F84B004456A1 /* LoginWebView */ = {
-			isa = PBXGroup;
-			children = (
-				71F895CF2B95F85E004456A1 /* LoginWebView.swift */,
-			);
-			path = LoginWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,19 +432,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E2F1012B98B6CC0087B1C2 /* SessionEnpoint.swift in Sources */,
 				717F23B02B8F757700C22CEF /* APIprovider.swift in Sources */,
-				7158F6742B8F6EF700105328 /* RequestTokenEndpoint.swift in Sources */,
+				71E2F0FF2B98B4460087B1C2 /* Session.swift in Sources */,
 				71F895D02B95F85E004456A1 /* LoginWebView.swift in Sources */,
 				71EA90CD2B8F6B4F008FAEBA /* Item.swift in Sources */,
-				7158F6792B8F6F5F00105328 /* RequestTokenService.swift in Sources */,
-				7158F6762B8F6F1F00105328 /* CreateSessionEndpoint.swift in Sources */,
+				7158F6792B8F6F5F00105328 /* SessionService.swift in Sources */,
 				7158F6722B8F6ED900105328 /* EndpointProtocol.swift in Sources */,
 				71EA90872B8F6743008FAEBA /* TheMoviesSpotApp.swift in Sources */,
-				71A6BE612B922190002C5C9F /* CreateSessionService.swift in Sources */,
 				71EA90BF2B8F696E008FAEBA /* LoginView-ViewModel.swift in Sources */,
 				7158F66F2B8F6E9600105328 /* APIerrors.swift in Sources */,
+				717F8AB42B9775B7004D4C21 /* MainTabbedView.swift in Sources */,
 				71EA90C82B8F6A14008FAEBA /* LoginView.swift in Sources */,
 				71EA90CC2B8F6AD5008FAEBA /* DependencyInjector.swift in Sources */,
+				71E2F0FD2B98882B0087B1C2 /* MoviesSearchMainView.swift in Sources */,
 				71EA90BD2B8F68C1008FAEBA /* TheRequestToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

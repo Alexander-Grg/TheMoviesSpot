@@ -35,9 +35,14 @@ struct LoginView: View {
 
                         }
                         .buttonStyle(.borderless)
+//                    } else if viewModel.sessionAndtokenAreSaved {
+//                        NavigationLink("") {
+//                            MoviesSearchMainView()
+//                        }
                     } else {
                         Button("Get started!", systemImage: "popcorn") {
                             viewModel.isStarted.toggle()
+                            viewModel.checkOnTokenAndSession()
                         }
                         .buttonStyle(.borderedProminent)
                     }
@@ -46,6 +51,12 @@ struct LoginView: View {
             }
         }.navigationDestination(isPresented: $viewModel.goLoginWebView) {
             LoginWebView()
+        }
+//        .navigationDestination(isPresented: $viewModel.sessionAndtokenAreSaved) {
+//            MoviesSearchMainView()
+//        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
+            viewModel.removeTokenAndSession()
         }
     }
 }

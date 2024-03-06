@@ -48,13 +48,8 @@ struct Injected<T> {
 }
 
 extension InjectedValues {
-    var tokenService: RequestTokenProtocol {
-           get { Self[RequestTokenServiceKey.self] }
-           set { Self[RequestTokenServiceKey.self] = newValue }
-       }
-
-    var sessionService: CreateSessionProtocol {
-           get { Self[CreateSessionServiceKey.self] }
-           set { Self[CreateSessionServiceKey.self] = newValue }
+    var sessionService: SessionServiceProtocol {
+           get { Self[SessionServiceKey.self] }
+           set { Self[SessionServiceKey.self] = newValue }
        }
 }
