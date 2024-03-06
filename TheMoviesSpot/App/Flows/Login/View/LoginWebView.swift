@@ -8,6 +8,7 @@
 import SwiftUI
 import WebKit
 import KeychainAccess
+import Combine
 
 struct LoginWebView: View {
     let keychain = Keychain()
@@ -26,9 +27,6 @@ struct LoginWebView: View {
         components.scheme = "https"
         components.host = "www.themoviedb.org"
         components.path = "/authenticate/" + (token ?? "")
-//        components.queryItems = [
-//            URLQueryItem(name: "redirect_to", value: "https://www.themoviedb.org/authenticate/\(token ?? "")?redirect_to=http://www.MovieObserver.com/approved)")
-//        ]
 
         webViewURL = components.url
     }
@@ -55,6 +53,8 @@ struct WebView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, WKNavigationDelegate {
+        @Injected (\.sessionService) var sessionService: SessionServiceProtocol
+        private var cancellable = Set<AnyCancellable>()
         let keychain = Keychain()
         var parent: WebView
 
@@ -62,24 +62,35 @@ struct WebView: UIViewRepresentable {
             self.parent = parent
         }
 
-        // Implement any necessary WKNavigationDelegate methods here
-
         func webView(_ webView: WKWebView,
                      decidePolicyFor navigationResponse: WKNavigationResponse,
                      decisionHandler: @escaping (WKNavigationResponsePolicy)
                      -> Void) {
             if let response = navigationResponse.response as? HTTPURLResponse {
-                  let headers = response.allHeaderFields
+                let headers = response.allHeaderFields
+                let token = try? keychain.get("requestToken")
                 let desiredHeaderKey = "authentication-callback"
                 if let authCallbackHeader = headers[desiredHeaderKey] as? String {
-                    do {
-                        try keychain.set(authCallbackHeader, key: "SessionID")
-                    } catch {
-                        print("The session has not been saved")
-                    }
-                }
-              }
-              decisionHandler(.allow)
-           }
+                    if !authCallbackHeader.isEmpty {
+//                        MARK: CALL here the request for Session
+                        sessionService.requestSession(token: token ?? "")
+                            .decode(type: Session.self, decoder: JSONDecoder())
+                            .receive(on: DispatchQueue.main)
+                            .sink(receiveCompletion: { error in
+                                print(error)
+                            },
+                                  receiveValue: { [weak self] value in
+                                guard let self = self else { return }
+                                do {
+                                    try keychain.set(value.session_id, key: "sessionID")
+                                } catch {
+                                    print("Saving the sessionID to the keychain has failed")
+                                }
+                            }).store(in: &cancellable)
+                        }
+                              }
+                              }
+            decisionHandler(.allow)
+                              }
     }
 }

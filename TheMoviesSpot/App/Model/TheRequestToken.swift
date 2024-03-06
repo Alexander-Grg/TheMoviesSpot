@@ -8,7 +8,6 @@
 import Foundation
 
 struct RequestToken: Codable {
-
     let token: String
     let expirationDate: String
 

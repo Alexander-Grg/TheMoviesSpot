@@ -13,17 +13,18 @@ extension LoginView {
     final class ViewModel: ObservableObject {
         let keychain = Keychain()
         private var cancellable = Set<AnyCancellable>()
-        @Injected (\.tokenService) var tokenService: RequestTokenProtocol
+        @Injected (\.sessionService) var sessionService: SessionServiceProtocol
         @Published var isStarted = false
         @Published var isSignInStarted = false
         @Published var isTokenReceived = false
         @Published var goLoginWebView = false
+        @Published var sessionAndtokenAreSaved = false
         @Published var loginText = ""
         @Published var password = ""
         @Published var validationMessage = ""
 
         func getToken() {
-                tokenService.requestToken()
+                sessionService.requestToken()
                     .decode(type: RequestToken.self, decoder: JSONDecoder())
                     .receive(on: DispatchQueue.main)
                     .sink(receiveCompletion: { error in
@@ -41,5 +42,18 @@ extension LoginView {
                         }
                     }).store(in: &cancellable)
             }
+
+        func checkOnTokenAndSession() {
+            guard let token = try? Keychain().get("requestToken"),
+                  let session = try? Keychain().get("sessionID"),
+                  !token.isEmpty,
+                  !session.isEmpty
+            else { return }
+            self.sessionAndtokenAreSaved = true
+        }
+
+        func removeTokenAndSession() {
+            try? keychain.removeAll()
+        }
     }
 }
